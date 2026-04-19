@@ -1,24 +1,36 @@
-# Deep-Learning-Based-Chest-X-Ray-Classification-for-COVID-19-and-Lung-Diseases
-Developed a deep learning model using VGG16 and ResNeXt50 to classify chest X-rays into COVID-19, Pneumonia, TB, and Normal. Achieved over 94% accuracy using preprocessing, augmentation, and model tuning on real-world datasets.
-# Chest X-Ray Classification for COVID-19 and Lung Diseases
 
-This project utilizes deep learning models (VGG16, ResNeXt50) to classify chest X-rays into four categories: COVID-19, Pneumonia, TB, and normal.
+# Deep Learning Based Disease Classification System Using CNNs
 
-## 🔧 Technologies Used
-- Python, TensorFlow
-- VGG16, ResNeXt50
-- Data Augmentation, Image Preprocessing
+Automated disease classification system using CNN architectures
+trained on medical imaging data.
 
-## 📈 Key Features
-- Achieved 94%+ accuracy
-- Used transfer learning and hyperparameter tuning
-- Visualized results with Grad-CAM heatmaps
+## Technologies Used
+- Python, TensorFlow, Keras
+- ResNeXt50 (custom grouped convolution architecture)
+- VGG16 (transfer learning from ImageNet)
+- Keras ImageDataGenerator (data augmentation)
 
-## 📁 Files
-- project on chest x- ray classification for covid 19& lung diseeses
+## What it does
+- Built and evaluated CNN architectures for automated disease
+  classification from chest X-ray images
+- Applied three data augmentation strategies to address
+  class imbalance
+- Evaluated with classification report, confusion matrix,
+  accuracy and loss curves across 20 epochs
 
-## 🚀 How to Run
+## Results
+- ResNeXt50: 94.70% accuracy
+- VGG16: 96.76% accuracy
+- Metrics: precision, recall, F1-score per class
+
+## Dataset
+Chest X-Ray (Pneumonia, COVID-19, Tuberculosis) — Kaggle
+7,135 images — 4 classes: Normal, COVID-19, Pneumonia, Tuberculosis
+
+## Files
+- project_on_chest_x-ray_classification.ipynb
+
+## How to Run
 1. Clone the repo
-2. Open the `.ipynb` notebook
-3. Run in Google Colab or Jupyter
-
+2. Open notebook in Google Colab or Jupyter
+3. Connect to Kaggle dataset and run all cells
